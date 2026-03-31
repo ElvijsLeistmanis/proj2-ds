@@ -32,4 +32,8 @@ public class Node<T> {
 	public Node(T element) {
 		setElement(element);
 	}
+	
+	public String toString( ) {
+		return "" + element;
+	}
 }

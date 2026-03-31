@@ -40,4 +40,18 @@ public class LinkedList<T> {
 		last = node;
 		count++;
 	}
+	
+	public void print() throws Exception {
+		if(isEmpty()) throw new Exception("Cannot print empty list.");
+		Node<T> currentNode = first;
+		
+		while(currentNode != null) {
+			System.out.print(currentNode.getElement() + "; ");
+			currentNode = currentNode.getNext();
+		}
+		
+		System.out.println();
+	}
+	
+	
 }
